@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import FixedContainer from './Components/SimpleContainer'
 
-function App() {
+
+
+const StyledBody = styled.body`
+  /* hide scrollbar */
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+
+  /* hide scrollbar for Chrome and Safari */
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+`;
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div>
+
+    <StyledBody>
+    <FixedContainer/>
+      </StyledBody>
+
     </div>
+      
+ 
   );
 }
 
-export default App;
