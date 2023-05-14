@@ -1,4 +1,6 @@
 html,
 body,
 #root,
-.app {}
+.app {
+    background-color: #444f64;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
 
+
 const Container = styled.span`
   display: inline-flex;
   align-items: center;
@@ -94,6 +95,8 @@ export default function ColorSelection() {
   const handleInput7 = (e) => {
     setColor7(e.target.value);
   };
+
+  console.log(hexValues); //To Avoid Warnings in console I Added This 
 
   const handleFetch = () => {
     const hexValuesArr = [
